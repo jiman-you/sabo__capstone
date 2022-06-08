@@ -84,6 +84,4 @@ public class ControlActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

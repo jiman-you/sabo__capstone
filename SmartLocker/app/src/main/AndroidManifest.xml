@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hansung.android.smartlocker">
     <!-- 외부 URL로부터 동영상을 스트리밍하기 위한 권한. -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 재생중 화면 어두워짐, 잠김 방지하기 위한 권한. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 재생중 화면 어두워짐, 잠김 방지하기 위한 권한. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -13,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLocker"
         android:usesCleartextTraffic="true">
+
         <activity
             android:name=".ControlActivity"
             android:exported="true" />
@@ -34,6 +36,13 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".StartActivity" />
+<!--        <service-->
+<!--        android:name=".java.MyFirebaseMessagingService"-->
+<!--        android:exported="false">-->
+<!--        <intent-filter>-->
+<!--            <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--        </intent-filter>-->
+<!--    </service>-->
     </application>
 
 </manifest>
