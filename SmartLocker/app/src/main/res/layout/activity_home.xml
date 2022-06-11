@@ -51,12 +51,33 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:background="@color/black">
-    <GridView
-        android:id="@+id/homemenu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="4"
-        android:background="@color/black"
-        android:horizontalSpacing="1dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:background="@color/white">
+                <Button
+                    android:id = "@+id/homebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="홈"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id = "@+id/controlbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="사용자"
+                    android:textStyle="bold"
+
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
     </LinearLayout>
 </LinearLayout>
